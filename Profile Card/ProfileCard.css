@@ -1,0 +1,219 @@
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+article[data-testid="test-profile-card"] {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 380px;
+  max-width: 90%;
+  text-align: center;
+}
+
+
+header[data-testid="header"] {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0078ff;
+}
+
+h2[data-testid="test-user-name"] {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: left;
+  line-height: 1.2;
+}
+
+h2[data-testid="test-user-name"] span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.bio {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.currentTime {
+  background: #f9fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.currentTime strong {
+  color: #0078ff;
+}
+
+
+nav[aria-label="Social links"] {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+nav[aria-label="Social links"] a {
+  color: #0078ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav[aria-label="Social links"] a:hover {
+  text-decoration: underline;
+}
+
+
+.dosAndDonts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  text-align: left;
+  gap: 1rem;
+}
+
+
+.hobbies, .dislikes {
+  width: 48%;
+}
+
+.hobbies h2, .dislikes h2 {
+  font-size: 1rem;
+  color: #0078ff;
+  margin-bottom: 0.5rem;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #f3f4f6;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 500px) {
+  .dosAndDonts {
+    flex-direction: column;
+  }
+
+  .hobbies, .dislikes {
+    width: 100%;
+  }
+
+  header[data-testid="header"] {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h2[data-testid="test-user-name"] {
+    text-align: center;
+  }
+}
+
+
+.about-container, .contact-container {
+  background: #fff;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.about-container h1, .contact-container h1 {
+  color: #0078ff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.about-container section {
+  margin-top: 1.5rem;
+}
+
+.about-container h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.back-link, .footer-link, .about-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0078ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover,
+.footer-link:hover,
+.about-link:hover {
+  color: #005fc1;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+input, textarea {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background: #0078ff;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #005fc1;
+}
